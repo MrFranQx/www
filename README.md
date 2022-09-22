@@ -1,2 +1,2 @@
-# mrfranqx.github.io
-My personal website.
+# WWW
+Some web pages for misc. use
