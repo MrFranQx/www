@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele</title>
+    <style>
+        body {
+            font-family: "Calibri", sans-serif;
+            font-size: 11;
+        }
+        td, th, table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: skyblue;
+        }
+        .green1 {
+            background-color: palegreen;
+        }
+        .green2 {
+            background-color: limegreen;
+        }
+        .green3 {
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: inline-block;">
+    <table>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+        <tr>
+            <th>2</th> <td>a</td> <td class="green1">b</td> <td class="green1">c</td> <td>d</td> <td>e</td>
+        </tr>
+        <tr>
+            <th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td class="green2">j</td>
+        </tr>
+        <tr>
+            <th>4</th> <td>k</td> <td>l</td> <td>m</td> <td>n</td> <td class="green2">o</td>
+        </tr>
+        <tr>
+            <th>5</th> <td class="green3">p</td> <td class="green3">q</td> <td class="green3">r</td> <td>s</td> <td>t</td> 
+            </tr>
+        <tr>
+            <th>6</th> <td class="green3">u</td> <td class="green3">v</td> <td class="green3">w</td> <td>y</td> <td>z</td>
+        </tr>
+    </table>
+    </div>
+    <div style="display: inline-block;">
+    <table>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+        <tr>
+            <th>2</th> <td>a</td> <td colspan="2" class="green1">b, c</td> <td>d</td> <td>e</td>
+        </tr>
+        <tr>
+            <th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td rowspan="2" class="green2">j, o</td>
+        </tr>
+        <tr>
+            <th>4</th> <td>k</td> <td>l</td> <td>m</td> <td>n</td>
+        </tr>
+        <tr>
+            <th>5</th> <td colspan="3" rowspan="2" class="green3">p, q, r, u, v, w</td> <td>s</td> <td>t</td> 
+        </tr>
+        <tr>
+            <th>6</th> <td>y</td> <td>z</td>
+        </tr>
+    </table>
+    </div>
+    <div>
+    <table>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+        <tr>
+            <th>2</th> <td>a</td> <td>b</td> <td>c</td> <td>d</td> <td>e</td>
+        </tr>
+        <tr>
+            <th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td>j</td>
+        </tr>
+        <tr>
+            <th>4</th> <td rowspan="2" class="green1">k, p</td> <td>l</td> <td>m</td> <td>n</td> <td>o</td>
+        </tr>
+        <tr>
+            <th>5</th> <td>q</td> <td>r</td> <td>s</td> <td>t</td> 
+            </tr>
+        <tr>
+            <th>6</th> <td>u</td> <td>v</td> <td>w</td> <td>y</td> <td>z</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
