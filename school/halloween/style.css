@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;
+    --font: 'Lato', sans-serif;
+    --h1-font: 'Creepster', cursive;
+    --accent-color: orange;
+    background-color: black;
+}
+
+h1 {
+    font-family: var(--h1-font);
+    font-size: 32pt;
+}
+
+h2, h3 {
+    scroll-margin-top: calc(41px + 0.5em);
+}
+
+body {
+    width: 80%;
+    margin: 8px auto;
+    font-family: var(--font);
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body > header {
+    text-align: center;
+    background-color: var(--accent-color);
+    border-radius: 25px 25px 0 0;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+body > nav {
+    background-color:lightgrey;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 1px 1px 5px;
+    position: sticky;
+    top: 0;
+}
+
+body > nav > ul {
+    margin: 0 25px;
+    padding: 0 calc(5% - 60px);
+    list-style-type: none;
+    display: flex;
+}
+
+body > nav > ul > li {
+    border-right: 1px solid darkgray;
+    min-width: 10em;
+    text-align: center;
+    position: relative;
+}
+
+body > nav > ul > li:first-child {
+    border-left: 1px solid darkgray;
+}
+
+body > nav > ul > li:hover {
+    box-shadow: 0 0 5px;
+}
+
+body > nav > ul > li:active {
+    box-shadow: inset 0 0 5px;
+}
+
+body > nav > ul > li a {
+    display: block;
+    padding: 10px 25px;
+}
+
+body > nav > ul > li > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+	visibility: hidden;
+    position: absolute;
+    background-color: lightgray;
+    min-width: inherit;
+    width: inherit;
+    left: -1px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 0 0 25px 25px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s, opacity 0.5s;
+}
+
+body > nav > ul > li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    max-height: 200px;
+}
+
+body > nav > ul > li:hover > ul > li {
+    border-top: 1px solid darkgray;
+}
+
+body > nav > ul > li:hover > ul > li:hover {
+    box-shadow: 0 0 5px;
+}
+
+body > nav > ul > li:hover > ul > li:active {
+    box-shadow: inset 0 0 5px;
+}
+
+body > nav > ul > li:hover > ul > li:hover:last-child {
+    border-radius: 0 0 25px 25px;
+}
+
+main {
+    width: 90%;
+    background-color: darkgray;
+    box-shadow: 1px 1px 5px;
+    border-radius: 25px;
+    padding: 20px 35px;
+    margin: 25px auto 0;
+    border-bottom: 0;
+}
+
+footer {
+    background-color:lightgrey;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px;
+    margin: 25px auto;
+    width: 90%;
+    padding: 10px 35px;
+}
+
+#scrollup {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 25px;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+#scrollup:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px;
+}
+
+#scrollup:active {
+    box-shadow: inset 1px 1px 5px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+figure > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 1px 1px 5px;
+    border-radius: 25px;
+}
+
+figcaption {
+    text-align: center;
+}
