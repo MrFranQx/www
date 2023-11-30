@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kostka kolorów</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0 auto;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            box-sizing: border-box;
+            border: 0.5em solid white;
+            text-align: center;
+            width: min(32vh, 32vw);
+            height: min(32vh, 32vw);
+        }
+
+        @media screen and (width < 576px) {
+            td {
+                border: 0.25em solid white;
+            }
+        }
+
+        #c1 {
+            background-color: midnightblue;
+            color: white;
+        }
+        #c2 {
+            background-color: darkblue;
+            color: white;
+        }
+        #c3 {
+            background-color: mediumblue;
+            color: white;
+        }
+        #c4 {
+            background-color: blue;
+            color: white;
+        }
+        #c5 {
+            background-color: royalblue;
+            color: white;
+        }
+        #c6 {
+            background-color: dodgerblue;
+            color: white;
+        }
+        #c7 {
+            background-color: deepskyblue;
+        }
+        #c8 {
+            background-color: skyblue;
+        }
+        #c9 {
+            background-color: lightskyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td id="c1">midnightblue<br>#191970</td>
+                <td id="c2">darkblue<br>#00008B</td>
+                <td id="c3">mediumblue<br>#0000CD</td>
+            </tr>
+            <tr>
+                <td id="c4">blue<br>#0000FF</td>
+                <td id="c5">royalblue<br>#4169E1</td>
+                <td id="c6">dodgerblue<br>#1E90FF</td>
+            </tr>
+            <tr>
+                <td id="c7">deepskyblue<br>#00BFFF</td>
+                <td id="c8">skyblue<br>#87CEEB</td>
+                <td id="c9">lightskyblue<br>#87CEFA</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
