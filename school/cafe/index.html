@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawiarnia Mors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kawiarnia Mors</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="oferta.txt" target="popup">Oferta</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <img height="480" src="cake.svg" alt="Cake">
+    </main>
+    <footer>
+        <strong>tel:</strong> 745 180 631
+        <strong>e-mail:</strong>mors@wp.pl
+    </footer>
+
+    <script>
+        let popupWindow = null;
+
+        function openPopup(url, name) {
+            if (popupWindow === null || popupWindow.closed) {
+                popupWindow = window.open(url, name, "popup");
+            } else {
+                popupWindow.focus();
+            }
+        }
+
+        const link = document.querySelector("a[target='popup']");
+        link.addEventListener(
+            "click",
+            (event) => {
+                openPopup(link.href,link.target);
+                event.preventDefault();
+            }
+        );
+    </script>
+</body>
+</html>
