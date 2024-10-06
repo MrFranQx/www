@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzień dziewczyny</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">    
+
+    <link rel="stylesheet" href="framework.css">
+    <script src="framework.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button id="scrollup" type="button" title="Scroll Up">
+        <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+    </button>
+    <header>
+        <h1>Dzień dziewczyny</h1>
+    </header>
+    <button id="navi" type="button" title="Navigation">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
+    <div class="hide"></div>
+    <nav>
+        
+    </nav>
+    <main>
+        <article class="draggable" id="calendar">
+            <table class="calendar">
+                <tr>
+                    <th>pon.</th>
+                    <th>wt.</th>
+                    <th>śr.</th>
+                    <th>czw.</th>
+                    <th>pt.</th>
+                    <th>sob.</th>
+                    <th>niedz.</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td class="mark">11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </article>
+        <article class="draggable" id="picture">
+            <img src="https://www.printoteka.pl/public/pic/materials/2800_dzien_dziewczyny.jpg" alt="dzień dziewczyny" draggable="false">
+        </article>
+        <article class="draggable" id="text">
+            <p><strong>Międzynarodowy Dzień Dziewczynek</strong> &ndash; coroczne święto obchodzone 11 października, ustanowione w 2011 roku przez Zgromadzenie Ogólne ONZ. Ma na celu przybliżenie społeczeństwu szczególnych wyzwań, przed jakimi stoją dziewczynki na całym świecie.</p>
+        </article>
+        <article class="zoomable" id="meme">
+            <img src="https://img9.demotywatoryfb.pl//uploads/202010/1602408292_2ohs4l_600.jpg" alt="mem" draggable="false">
+        </article>
+    </main>
+    <footer>
+        &copy; MrFranQx 2024
+    </footer>
+</body>
+</html>
