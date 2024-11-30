@@ -2,6 +2,8 @@ body {
     display: grid;
     grid-template-columns: minmax(min-content, 300px) 1fr;
     font-family: sans-serif;
+    grid-template-rows: auto 1fr auto;
+    min-height: calc(100vh - 16px);
 }
 
 header {
@@ -9,7 +11,8 @@ header {
     background-color: #ecf9c0;
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    align-items: center;
+    padding: 2.5em;
 }
 
 .link {
@@ -66,11 +69,12 @@ footer {
 }
 
 header > img {
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: calc(8px + 0.5em);
 }
 
 main {
     display: grid;
     place-content: center;
+    padding: 1em;
 }
